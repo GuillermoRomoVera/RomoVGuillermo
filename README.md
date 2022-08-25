@@ -1,10 +1,9 @@
-# <div style="text-align: center"> <span style="color:blue"> Instituto Tecnológico de Nuevo Laredo </span> </div>
+#  <div style="text-align: center"> <span style="color:blue"> Instituto Tecnológico de Nuevo Laredo </span> </div>
 
 <div>
 <p style = 'text-align:center;'>
-<img src="http://www.itnuevolaredo.edu.mx/images/resources/Soto/Logo/Logo.png" alt="JuveYell" width="300px">
-</p>
-</div>
+<img src="http://www.itnuevolaredo.edu.mx/images/resources/Soto/Logo/Logo.png" >
+/div>
 
 ## <div style="text-align: center"> <span style="color:red"> Programación Web </span>
 
