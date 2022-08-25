@@ -10,6 +10,6 @@
 
 ## <div style="text-align: center"> _Gerardo Pineda Zapata_
 
-### <div style="text-align: center"> Alimno: Guillermo Romo Vera </div>
+### <div style="text-align: center"> Alumno: Guillermo Romo Vera </div>
 
 ### <div style="text-align: center">Numero de Control: 19100251 </div>
