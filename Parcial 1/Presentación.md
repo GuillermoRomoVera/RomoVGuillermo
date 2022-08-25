@@ -22,7 +22,7 @@ Se puede decir que no domino el 100% pero puedo destacar en codificar.
 
 ### Que especialidad quiero tener en mi futuro
 
-> En mi particularidad, me llamada la atención los dispositivos moviles porque estado indagando sobre el funcionamiento sobres los nuevos que van saliendo a dia de hoy, limpieza, remplazo de partes.
+> En mi particularidad, me llamada la atención los dispositivos moviles porque estado indagando sobre el funcionamiento sobres los nuevos celulares que van saliendo a dia de hoy, limpieza, remplazo de partes.
 
 ### Hobbies, deportes que práctico.
 > * No se si considerarlo como hobyy, pero me gusta resolver sopas de letras y crucigramas.
