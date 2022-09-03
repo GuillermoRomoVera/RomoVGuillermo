@@ -16,3 +16,6 @@ __En cada caja en CSS están los siguientes elementos:__
 >- El margen de la caja (Margin box): El margen es la capa más externa. Envuelve el contenido, el relleno y el borde como espacio en blanco entre la caja y otros elementos. Es posible controlar su tamaño usando la propiedad margin y otras propiedades relacionadas.
 
 ![Alt Text](https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png)
+
+#
+#### Guillermo Romo Vera #19100251
