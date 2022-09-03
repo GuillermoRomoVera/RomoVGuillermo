@@ -2,7 +2,7 @@
 
 > *El modelo de cajas o "Box Model" CSS completo se aplica a cajas que muestran comportamiento en bloque; las cajas con comportamiento online solo utilizan una sección del comportamiento determinado en el modelo de cajas. Para complicarlo un poco más, hay un modelo de cajas estándar y un modelo de cajas alternativo. A todas las cajas se les puede aplicar las siguientes propiedades: Width, Height, Padding, Margin, Border, Background.*
 
-
+#
 ## **Partes de una Caja**
 
 __En cada caja en CSS están los siguientes elementos:__
