@@ -3,10 +3,44 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  text-align: center;
+  background: #ecf0f1;
+  padding-top: 20px;
+}
 .contenedor{
-  width: 100vw;
-  height: 100vh;
-  background-color: rebeccapurple;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
 }
 
+#Boton1 {
+  background: aqua;
+  background: linear-gradient(0deg, rgb(44, 182, 182) 0%, rgb(63, 73, 179) 100%);
+  border: 1px solid black;
+}
+#Boton1:hover {
+   background: rgb(63, 187, 79);
+background: linear-gradient(0deg, rgb(94, 228, 161) 0%, rgb(19, 230, 82) 100%);
+}
+
+/* 2 */
+#Boton2 {
+  background: aqua;
+  background: linear-gradient(0deg, rgb(44, 182, 182) 0%, rgb(63, 73, 179) 100%);
+  border: 1px solid black;
+}
+#Boton2:hover {
+   background: rgb(63, 187, 79);
+background: linear-gradient(0deg, rgb(94, 228, 161) 0%, rgb(19, 230, 82) 100%);
+}
+
+#Boton3 {
+  background: aqua;
+  background: linear-gradient(0deg, rgb(44, 182, 182) 0%, rgb(63, 73, 179) 100%);
+  border: 1px solid black;
+}
+#Boton3:hover {
+   background: rgb(63, 187, 79);
+background: linear-gradient(0deg, rgb(94, 228, 161) 0%, rgb(19, 230, 82) 100%);
+}

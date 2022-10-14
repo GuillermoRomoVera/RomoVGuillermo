@@ -27,13 +27,14 @@
     text-shadow: 0.1em 0.1em 0.2em black;
     top: 50%;
     right: 50%;
-    background-color: rgb(44, 174, 144);
+    background-color: rgb(65, 160, 204);
     text-align: center;
-    border: 3px solid rgb(162, 180, 23);
+    border: 3px solid rgb(58, 175, 74);
 }
 
 .cajaAmarilla{
-    background-color: yellow;
+    background-color: rgb(211, 211, 11);
+    transition: .3s;
 }
 
 
