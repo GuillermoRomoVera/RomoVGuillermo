@@ -32,7 +32,7 @@
     border: 3px solid rgb(58, 175, 74);
 }
 
-.cajaAmarilla{
+.ClickAmarillo{
     background-color: rgb(211, 211, 11);
     border: 3px solid rgb(197, 129, 3);
     font-family: Arial, Helvetica, sans-serif;
@@ -45,8 +45,8 @@
 }
 
 
-#caja1 { grid-area: menulat;}
-#caja2 { grid-area: encabezado;}
-#caja3 { grid-area: columna1;}
-#caja4 { grid-area: columna2;}
-#caja5 { grid-area: piepagina;}
+#Boton1 { grid-area: menulat;}
+#Boton2 { grid-area: encabezado;}
+#Boton3 { grid-area: columna1;}
+#Boton4 { grid-area: columna2;}
+#Boton5 { grid-area: piepagina;}
