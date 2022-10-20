@@ -1,0 +1,80 @@
+.head{
+    background-color: red;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    border: 5px solid rgb(205, 26, 26);
+
+}
+.caja1{
+    background-color: rgb(60, 60, 201);}
+.caja1:hover{
+    background-color: rgb(14, 14, 222);
+    transform: scale(1.05);
+    transition: .3s;
+    font-size: 18px;
+    border-style: double;
+    box-shadow: 0 0 35px rgb(14, 14, 222);
+}
+
+.caja2{
+    background-color: darkslategray;}
+.caja2:hover{
+    background-color:rgb(49, 105, 105);
+    transform: scale(1.05);
+    transition: .3s;
+    font-size: 18px;
+    border-style: double;
+    box-shadow: 0 0 35px rgb(49, 105, 105);
+}
+
+.caja3{
+    background-color: olivedrab;}
+.caja3:hover{
+    background-color:  rgb(58, 202, 22);
+    transform: scale(1.05);
+    transition: .3s;
+    font-size: 18px;
+    border-style: double;
+    box-shadow: 0 0 35px rgb(58, 202, 22);
+}
+    
+
+.caja4{
+        background-color: blueviolet;}
+.caja4:hover{
+    background-color: rgb(104, 5, 196);
+    transform: scale(1.05);
+    transition: .3s;
+    font-size: 18px;
+    border-style: double;
+    box-shadow: 0 0 35px rgb(104, 5, 196);
+}        
+
+.caja5{
+        background-color: rgb(222, 70, 222);}
+.caja5:hover{
+    background-color: rgb(232, 9, 232);
+    transform: scale(1.05);
+    transition: .3s;
+    font-size: 18px;
+    border-style: double;
+    box-shadow: 0 0 35px rgb(255, 0, 255);
+}       
+
+.caja6{
+        background-color: orange;}
+.caja6:hover{
+    background-color:rgb(255, 247, 0);
+    transform: scale(1.05);
+    transition: .3s;
+    font-size: 18px;
+    border-style: double;
+    box-shadow: 0 0 35px rgb(255, 247, 0);
+}       
+
+div p{
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
