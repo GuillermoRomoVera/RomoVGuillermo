@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Async.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button id="BotonPeticion">Peticion</button>
+    <div id="Carta">
+        <table>
+            <table class="table table-dark">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Key</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Elixir</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Rareza</th>
+                    <th scope="col">Descripción</th>
+                  </tr>
+                </thead>
+            <tbody id="tablabody_royale"></tbody>
+        </table>
+    </div>
+    <script>
+        
+
+        var requestURL = 'https://royaleapi.github.io/cr-api-data/json/cards.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+  
+    </script>
+
+        <script src="Await.js"></script>
+</body>
+</html>
