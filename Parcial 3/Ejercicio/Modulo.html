@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="Cad">Ingrese alguna frase o cadena:</label>
+    <input id="cad" type="text">
+    <button id="Boton">Procesar</button>
+    <input id="varcadM" type="text" disabled>
+
+    <script type="module">
+        import {mayuscula} from "./Modulo.js"
+        document.getElementById("Boton").addEventListener("click", function() {
+            let varcad = document.getElementById("cad").value;
+            let varcadM = mayuscula(varcad);
+            document.getElementById("varcadM").value = varcadM;
+        });
+
+
+    </script> 
+</body>
+</html>
