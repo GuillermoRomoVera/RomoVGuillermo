@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <h1>Bienvenido a Amazon, inicie sesión </h1>
+    <form>
+        <div class="row">
+
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+          <label for="IDcliente" class="form-label">ID de Cliente:</label>
+          <input type="text" class="form-control" id="IDCliente" aria-describedby="emailHelp">
+          </div>
+
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+          <label for="IDNombre" class="form-label">Nombre del Cliente:</label>
+          <input type="text" class="form-control" id="Cliente">
+        </div>
+
+        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="IDRfc" class="form-label">RFC:</label>
+            <input type="text" class="form-control" id="Rfc">
+          </div>
+        
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="IDContraseña" class="form-label">Contraseña:</label>
+            <input type="text" class="form-control" id="Contraseña">
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <!---img src="..." class="rounded me-2" alt="..."--->
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+              </div>
+          </div>  
+
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" id="Modal" aria-label="Close"></button>
+
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Está a punto de iniciar sesión, ¿Quiere continuar?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </form>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      
+    <script>const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+          toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+        
+            toast.show()
+          })
+        }
+        </script>
+
+        
+ 
+  </body>
+</html>
