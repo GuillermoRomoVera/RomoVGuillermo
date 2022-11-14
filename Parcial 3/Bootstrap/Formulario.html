@@ -21,15 +21,39 @@
           <label for="IDNombre" class="form-label">Nombre del Cliente:</label>
           <input type="text" class="form-control" id="Cliente">
         </div>
+        </div>
 
-        <div class="form-group col-sm-4 col-md-4 col-lg-4">
-            <label for="IDRfc" class="form-label">RFC:</label>
-            <input type="text" class="form-control" id="Rfc">
-          </div>
-        
+        <div class="row">
+
           <div class="form-group col-sm-4 col-md-4 col-lg-4">
-            <label for="IDContraseña" class="form-label">Contraseña:</label>
+          <label for="IDcliente" class="form-label">Usuario:</label>
+          <input type="text" class="form-control" id="IDCliente" aria-describedby="emailHelp">
+          </div>
+
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+          <label for="IDNombre" class="form-label">RFC:</label>
+          <input type="text" class="form-control" id="Cliente">
+        </div>
+        </div>
+
+        <div class="row">
+
+          <div class="form-group col-sm-6 col-md-6 col-lg-6">
+          <label for="IDcliente" class="form-label">Clave:</label>
+          <input type="text" class="form-control" id="IDCliente" aria-describedby="emailHelp">
+          </div>
+
+          <div class="form-group col-sm-6 col-md-6 col-lg-6">
+          <label for="IDNombre" class="form-label">Link Clave:</label>
+          <input type="text" class="form-control" id="Cliente">
+        </div>
+        </div>
+        
+          <div class="form-group col-sm-1 col-md-1 col-lg-1">
+            <label for="IDContraseña" class="form-label">Codigo:</label>
             <input type="text" class="form-control" id="Contraseña">
+          </div>
+
             <div class="toast-container position-fixed bottom-0 end-0 p-3">
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
@@ -47,25 +71,26 @@
 
         <button type="submit" class="btn btn-primary">Ingresar</button>
         <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" id="Modal" aria-label="Close"></button>
+        <button type="submit" class="btn btn-primary" id="Modal" >Modal</button>
 
-        <div class="modal" tabindex="-1">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p>Está a punto de iniciar sesión, ¿Quiere continuar?</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+       
+        <div id="Modal1" class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>
+        </div>
         
       </form>
       
@@ -81,6 +106,14 @@
           })
         }
         </script>
+
+
+    <script>
+      document.getElementById('Modal').addEventListener("click", ()=>{
+        const Modal1 = new bootstrap.Modal('#Modal1',{})
+        Modal1.show();
+      })
+    </script>
 
         
  
