@@ -78,6 +78,8 @@
         <button type="submit" class="btn btn-primary">Ingresar</button>
         <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
         <button type="button" class="btn btn-primary" id="BotonModal" >Modal</button>
+        <button type="button" class="btn btn-primary" id="BotonServ" >Traer Datos</button>
+
 
        
         <div id="AccionModal1" class="modal" tabindex="-1">
@@ -118,7 +120,28 @@
           memo.show();
         })
     </script>
+      
+      <script>
+        document.getElementById("BotonServ").addEventListener("click", ()=>{
+        fetch('GetRegistro.php')
+        .then(respuesta=>respuesta.json())
+        .then(dato=>console.log(dato));
+      });
 
+      function refrescar(reg){
+        document.getElementById("IDCLiente").value=reg.IDCliente;
+        document.getElementById("CLiente").value=reg.Nombre;
+
+      }
+      
+      document.getElementById("BotonServ").addEventListener("click",async ()=>{
+        let respuesta = await fetch('GetRegistro.php');
+        let dato = await respuesta.json();
+        document.getElementById("IDCliente").value=reg.IDCliente;
+        document.getElementById("Cliente").value=reg.Nombre;
+      });
+
+      </script>
         
  
   </body>
