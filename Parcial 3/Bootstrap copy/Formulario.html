@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <h1>Bienvenido a Amazon, favor de iniciar sesión </h1>
+  
+    <form id="Form" action="url">
+        <div class="row">
+
+          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+          <label for="IDcliente" class="form-label">ID de Cliente:</label>
+          <input type="text" class="form-control" id="IDCliente" aria-describedby="emailHelp">
+          </div>
+
+          <div class="form-group col-sm-3 col-md-3 col-lg-3">
+          <label for="IDNombre" class="form-label">Nombre del Cliente:</label>
+          <input type="text" class="form-control" id="Cliente">
+          </div>
+
+          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+            <label for="IDcliente" class="form-label">Usuario:</label>
+            <input type="text" class="form-control" id="Usuario" aria-describedby="emailHelp">
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+            <label for="IDContraseña" class="form-label">Contraseña:</label>
+            <input type="text" class="form-control" id="Contraseña">
+          </div>
+
+          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+          <label for="IDNombre" class="form-label">RFC:</label>
+          <input type="text" class="form-control" id="RFC">
+          </div>
+
+          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+            <label for="IDcliente" class="form-label">Estado:</label>
+            <input type="text" class="form-control" id="Estado" aria-describedby="emailHelp">
+            </div>
+        </div>
+
+        
+        <div class="row">
+          <div class="form-group col-sm-1 col-md-1 col-lg-1">
+          <label for="IDcliente" class="form-label">NIP:</label>
+          <input type="text" class="form-control" id="NIP" aria-describedby="emailHelp">
+          </div>
+
+          <div class="form-group col-sm-1 col-md-1 col-lg-1">
+          <label for="IDNombre" class="form-label">C.P:</label>
+          <input type="text" class="form-control" id="CodigoPostal">
+        </div>
+
+          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+            <label for="IDContraseña" class="form-label">Ciudad :</label>
+            <input type="text" class="form-control" id="Ciudad">
+          </div>
+        </div>
+        
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <!---img src="..." class="rounded me-2" alt="..."--->
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+              </div>
+          </div>  
+
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+        <button type="button" class="btn btn-primary" id="BotonModal" >Modal</button>
+        <button type="button" class="btn btn-primary" id="BotonServ" >Traer Datos</button>
+        <button type="button" class="btn btn-primary" id="BotonServ" >Consultar</button>
+
+
+
+       
+        <div id="AccionModal1" class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Inicio de sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>¿Son correctos sus datos?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </form>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      
+    <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+          toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+        
+            toast.show()
+          })
+        }
+
+        document.getElementById('BotonModal').addEventListener("click", ()=>{
+          const memo = new bootstrap.Modal('#AccionModal1', {})
+          memo.show();
+        })
+    </script>
+      
+      <script>
+        /*document.getElementById("BotonServ").addEventListener("click", ()=>{
+        fetch('GetRegistro.php')
+        .then(respuesta=>respuesta.json())
+        .then(dato=>console.log(dato));
+      });
+
+      function refrescar(reg){
+        document.getElementById("IDCLiente").value=reg.IDCliente;
+        document.getElementById("CLiente").value=reg.Nombre;
+
+      }*/
+      
+      document.getElementById("BotonServ").addEventListener("click",async ()=>{
+
+        var datosFormulario = new FormData(document.getElementById("Form"));
+        let respuesta = await fetch('GetRegistro.php',{
+          method: 'POST',
+          body: datosFormulario
+        })
+        let dato = await respuesta.json();
+
+        document.getElementById("IDCliente").value=dato.IDCliente;
+        document.getElementById("Cliente").value=dato.Nombre;
+        document.getElementById("Usuario").value=dato.Usuario;
+        document.getElementById("RFC").value=dato.RFC;
+        document.getElementById("NIP").value=dato.NIP;
+        document.getElementById("CodigoPostal").value=dato.CodigoPostal;
+        document.getElementById("Contraseña").value=dato.Contraseña;
+        document.getElementById("Ciudad").value=dato.Ciudad;
+        document.getElementById("Estado").value=dato.Estado;
+      });
+
+      </script>
+        
+ 
+  </body>
+</html>
