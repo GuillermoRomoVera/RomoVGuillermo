@@ -10,39 +10,39 @@
 
     <h1>Bienvenido a Amazon, favor de iniciar sesión </h1>
   
-    <form id="Form" action="url">
+    <form id="idForm" action="url">
         <div class="row">
 
           <div class="form-group col-sm-2 col-md-2 col-lg-2">
           <label for="IDcliente" class="form-label">ID de Cliente:</label>
-          <input type="text" class="form-control" id="IDCliente" aria-describedby="emailHelp">
+          <input type="text" class="form-control" id="IDCliente" name="IDCliente" aria-describedby="emailHelp">
           </div>
 
           <div class="form-group col-sm-3 col-md-3 col-lg-3">
           <label for="IDNombre" class="form-label">Nombre del Cliente:</label>
-          <input type="text" class="form-control" id="Cliente">
+          <input type="text" class="form-control" id="Cliente" name="Cliente">
           </div>
 
           <div class="form-group col-sm-2 col-md-2 col-lg-2">
             <label for="IDcliente" class="form-label">Usuario:</label>
-            <input type="text" class="form-control" id="Usuario" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="Usuario" name="Usuario" aria-describedby="emailHelp">
             </div>
         </div>
 
         <div class="row">
           <div class="form-group col-sm-2 col-md-2 col-lg-2">
             <label for="IDContraseña" class="form-label">Contraseña:</label>
-            <input type="text" class="form-control" id="Contraseña">
+            <input type="text" class="form-control" id="Contraseña" name="Contraseña">
           </div>
 
           <div class="form-group col-sm-2 col-md-2 col-lg-2">
           <label for="IDNombre" class="form-label">RFC:</label>
-          <input type="text" class="form-control" id="RFC">
+          <input type="text" class="form-control" id="RFC" name="RFC">
           </div>
 
           <div class="form-group col-sm-2 col-md-2 col-lg-2">
             <label for="IDcliente" class="form-label">Estado:</label>
-            <input type="text" class="form-control" id="Estado" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="Estado" aria-describedby="emailHelp" name="Estado">
             </div>
         </div>
 
@@ -50,17 +50,17 @@
         <div class="row">
           <div class="form-group col-sm-1 col-md-1 col-lg-1">
           <label for="IDcliente" class="form-label">NIP:</label>
-          <input type="text" class="form-control" id="NIP" aria-describedby="emailHelp">
+          <input type="text" class="form-control" id="NIP"name="NIP" aria-describedby="emailHelp">
           </div>
 
           <div class="form-group col-sm-1 col-md-1 col-lg-1">
           <label for="IDNombre" class="form-label">C.P:</label>
-          <input type="text" class="form-control" id="CodigoPostal">
+          <input type="text" class="form-control" id="CodigoPostal" name="CodigoPostal">
         </div>
 
           <div class="form-group col-sm-2 col-md-2 col-lg-2">
             <label for="IDContraseña" class="form-label">Ciudad :</label>
-            <input type="text" class="form-control" id="Ciudad">
+            <input type="text" class="form-control" id="Ciudad" name="Ciudad">
           </div>
         </div>
         
@@ -84,7 +84,6 @@
         <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
         <button type="button" class="btn btn-primary" id="BotonModal" >Modal</button>
         <button type="button" class="btn btn-primary" id="BotonServ" >Traer Datos</button>
-        <button type="button" class="btn btn-primary" id="BotonServ" >Consultar</button>
 
 
 
@@ -111,7 +110,7 @@
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
       
-    <script>
+      <script>
     const toastTrigger = document.getElementById('liveToastBtn')
         const toastLiveExample = document.getElementById('liveToast')
         if (toastTrigger) {
@@ -127,7 +126,7 @@
           memo.show();
         })
     </script>
-      
+    
       <script>
         /*document.getElementById("BotonServ").addEventListener("click", ()=>{
         fetch('GetRegistro.php')
@@ -141,23 +140,22 @@
 
       }*/
       
-      document.getElementById("BotonServ").addEventListener("click",async ()=>{
-
-        var datosFormulario = new FormData(document.getElementById("Form"));
-        let respuesta = await fetch('GetRegistro.php',{
-          method: 'POST',
-          body: datosFormulario
-        })
-        let dato = await respuesta.json();
-
+      
+      document.getElementById("BotonServ").addEventListener("click",async () => {
+      var datosFormulario= new FormData(document.getElementById("idForm"));
+      let respuesta = await fetch('FormData.php',{
+    method: 'POST',
+    body: datosFormulario
+  })
+  let dato = await respuesta.json();
+       
         document.getElementById("IDCliente").value=dato.IDCliente;
-        document.getElementById("Cliente").value=dato.Nombre;
-        document.getElementById("Usuario").value=dato.Usuario;
-        document.getElementById("RFC").value=dato.RFC;
-        document.getElementById("NIP").value=dato.NIP;
         document.getElementById("CodigoPostal").value=dato.CodigoPostal;
-        document.getElementById("Contraseña").value=dato.Contraseña;
+        document.getElementById("Usuario").value=dato.Usuario;
         document.getElementById("Ciudad").value=dato.Ciudad;
+        document.getElementById("NIP").value=dato.Clave;
+        document.getElementById("RFC").value=dato.RFC;
+        document.getElementById("Contraseña").value=dato.Contraseña;
         document.getElementById("Estado").value=dato.Estado;
       });
 
