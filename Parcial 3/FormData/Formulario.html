@@ -13,34 +13,34 @@
     <form id="idForm" action="url">
         <div class="row">
 
-          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
           <label for="IDcliente" class="form-label">ID de Cliente:</label>
           <input type="text" class="form-control" id="IDCliente" name="IDCliente" aria-describedby="emailHelp">
           </div>
 
-          <div class="form-group col-sm-3 col-md-3 col-lg-3">
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
           <label for="IDNombre" class="form-label">Nombre del Cliente:</label>
           <input type="text" class="form-control" id="Cliente" name="Cliente">
           </div>
 
-          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
             <label for="IDcliente" class="form-label">Usuario:</label>
             <input type="text" class="form-control" id="Usuario" name="Usuario" aria-describedby="emailHelp">
             </div>
         </div>
 
         <div class="row">
-          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
             <label for="IDContraseña" class="form-label">Contraseña:</label>
             <input type="text" class="form-control" id="Contraseña" name="Contraseña">
           </div>
 
-          <div class="form-group col-sm-2 col-md-2 col-lg-2">
-          <label for="IDNombre" class="form-label">RFC:</label>
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="IDNombre" class="form-label">RFC:</label>
           <input type="text" class="form-control" id="RFC" name="RFC">
           </div>
 
-          <div class="form-group col-sm-2 col-md-2 col-lg-2">
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
             <label for="IDcliente" class="form-label">Estado:</label>
             <input type="text" class="form-control" id="Estado" aria-describedby="emailHelp" name="Estado">
             </div>
@@ -48,23 +48,24 @@
 
         
         <div class="row">
-          <div class="form-group col-sm-1 col-md-1 col-lg-1">
-          <label for="IDcliente" class="form-label">NIP:</label>
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="IDcliente" class="form-label">NIP:</label>
           <input type="text" class="form-control" id="NIP"name="NIP" aria-describedby="emailHelp">
           </div>
 
-          <div class="form-group col-sm-1 col-md-1 col-lg-1">
-          <label for="IDNombre" class="form-label">C.P:</label>
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="IDNombre" class="form-label">C.P:</label>
           <input type="text" class="form-control" id="CodigoPostal" name="CodigoPostal">
         </div>
 
-          <div class="form-group col-sm-2 col-md-2 col-lg-2">
-            <label for="IDContraseña" class="form-label">Ciudad :</label>
+        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+          <label for="IDContraseña" class="form-label">Ciudad :</label>
             <input type="text" class="form-control" id="Ciudad" name="Ciudad">
           </div>
         </div>
         
 
+        
             <div class="toast-container position-fixed bottom-0 end-0 p-3">
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
@@ -141,26 +142,26 @@
       }*/
       
       
-      document.getElementById("BotonServ").addEventListener("click",async () => {
+      document.getElementById("BotonServ").addEventListener("click", async() => {
       var datosFormulario= new FormData(document.getElementById("idForm"));
       let respuesta = await fetch('FormData.php',{
-    method: 'POST',
-    body: datosFormulario
-  })
+          method: 'POST',
+          body: datosFormulario
+        })
+  console.log(datosFormulario);
   let dato = await respuesta.json();
-       
-        document.getElementById("IDCliente").value=dato.IDCliente;
+
+        document.getElementById("Cliente").value=dato.Cliente;
         document.getElementById("CodigoPostal").value=dato.CodigoPostal;
         document.getElementById("Usuario").value=dato.Usuario;
         document.getElementById("Ciudad").value=dato.Ciudad;
         document.getElementById("NIP").value=dato.Clave;
         document.getElementById("RFC").value=dato.RFC;
-        document.getElementById("Contraseña").value=dato.Contraseña;
+        document.getElementById("Contraseña").value=dato.Contrasena;
         document.getElementById("Estado").value=dato.Estado;
       });
 
       </script>
-        
  
   </body>
 </html>
