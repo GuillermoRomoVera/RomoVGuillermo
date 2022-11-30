@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
-    <script src="./jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
-    <script src="./jsGrid.js"></script>
-
+    
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />    
     <title>Document</title>
 </head>
 <body>
 
-    <div id="jsGrid"></div>
+    <div id="wrapper"></div>
 
 </body>
+<script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+<script>
+    (async () =>{
+    let headersList = {"Accept": "*/*",}
+    let respuesta = await fetch("http://localhost:8081/RomoVGuillermo/Parcial%203/jsGrid%20copy/Conexion.php", { 
+    method: "GET",
+    headers: headersList
+    });
+
+    let datos = await respuesta.json();
+    new gridjs.Grid({
+    columns: ["Clave","Nombre","Ciudad","Estado","CodigoPostal","Cliente","Contraseña","RFC","IDCliente"],
+    data: datos
+    }).render(document.getElementById("wrapper"));  
+
+    })();
+
+</script>
 </html>
