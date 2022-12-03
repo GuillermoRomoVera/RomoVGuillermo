@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="Formulario">
+        <label for="Nombre">Nombre</label>
+        <input id="Nombre" name="Nombre" type="text">
+        <input id="Boton" type="button" value="Crear PDF"> 
+    </form>
+    <script>
+        document.getElementById('Nombre').focus();
+        document.getElementById("Boton").addEventListener("click",async function() {
+        let Form = document.getElementById('Formulario');
+        let bodyContent = new FormData(Form);
+        let response = await fetch("http://localhost:8081/RomoVGuillermo/Parcial%203/Pdf/FPDF/CrearPdf.php",{
+            method: "POST",
+            body: bodyContent,
+        });
+        let ArchivoPdf = await response.blob();
+        ArchvoUrl = URL.createObjectURL(ArchivoPdf);
+        window.open(ArchvoUrl);
+        });
+    </script>
+</body>
+</html>
