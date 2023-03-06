@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="Decoracion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div style="text-align:center;">
+      <h1>Crea tú cuenta de Amazon</h1>
+      <img src="https://www.frikko.com/wp-content/uploads/2019/03/amazon-logo-icon-png_44637.png" width="13% ">
+    </div>
+    
+    <form action="AltaRegistro.php" id="idFormulario" method="post">
+        <div class="row">
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+          <label for="Email" class="form-label">Correo Electronico:</label>
+          <input type="text" class="form-control" id="Email" name="Email" aria-describedby="emailHelp"></div>
+
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+          <label for="Nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="Nombre" name="Nombre"></div>
+
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="Usuario" class="form-label">Usuario:</label>
+            <input type="text" class="form-control" id="Usuario" name="Usuario" aria-describedby="emailHelp">
+            </div></div>
+
+        
+          <div class="row">
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="Contrasena" class="form-label">Contraseña:</label>
+            <input type="text" class="form-control" id="Contrasena" name="Contrasena"></div>
+
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="Direccion" class="form-label">Dirección:</label>
+          <input type="text" class="form-control" id="Direccion" name="Direccion"></div>
+
+          <div class="form-group col-sm-4 col-md-4 col-lg-4">
+            <label for="Estado" class="form-label">Estado:</label>
+            <input type="text" class="form-control" id="Estado" name="Estado">
+            </div></div>
+
+        
+        <div class="row">
+          <div class="form-group col-sm-6 col-md-6 col-lg-6">
+            <label for="CodigoPostal" class="form-label">C.P:</label>
+          <input type="text" class="form-control" id="CodigoPostal" name="CodigoPostal"></div>
+
+        <div class="form-group col-sm-6 col-md-6 col-lg-6">
+          <label for="Ciudad" class="form-label">Ciudad :</label>
+            <input type="text" class="form-control" id="Ciudad" name="Ciudad"></div>
+        
+          </div>
+        
+
+        <div id="Botones" style="text-align:center; margin: 10px; ">
+        <button type="submit" class="btn btn-primary"id="Registrar">Registrar</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" color="aqua">Consultar</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">Eliminar</button>
+        <button type="button" class="btn btn-primary" id="Modificar" >Modificar</button>
+          </div>
+
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabl">Consultar</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+                </div>
+  
+                <div class="modal-body">
+                    <div class="form-group col-sm-12 col-md-12 col-lg-3">
+                      <label for="NIP" class="form-label">Ingrese el NIP para consultar su cuenta:</label>
+                      <input type="number" class="form-control" name="NIP" id="NIP" >
+                    </div>
+                  </div> 
+                  <div class="modal-footer"> 
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Atras</button> 
+                    <button type="button" id="TraerDatos" class="btn btn-dark" data-bs-dismiss="modal">Consultar Registro</button> 
+                  </div> 
+              </div> 
+            </div>
+          </div>
+        
+      </form>
+
+      <form action="BajaRegistro.php" method="post">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabl">Eliminar Registro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+              <div class="modal-body">
+                  <div class="form-group col-sm-12 col-md-12 col-lg-3">
+                    <label for="NIP" class="form-label" >Ingrese su codigo NIP para consultar su cuenta:</label>
+                    <input type="number" class="form-control" name="NIP" id="NIP" >
+                  </div>
+                </div> 
+                <div class="modal-footer"> 
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Atras</button> 
+                  <button type="submit" class="btn btn-dark" data-bs-dismiss="modal">Eliminar</button> 
+                </div> 
+            </div> 
+          </div>
+        </div>
+      </form>
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      
+    
+      <script>
+      //Consultar
+      document.getElementById("TraerDatos").addEventListener("click", async function() {
+      var datosFormulario= new FormData(document.getElementById("idFormulario"));
+      let respuesta = await fetch('Consulta.php',{
+          method: 'POST',
+          body: datosFormulario
+        })
+  console.log(datosFormulario);
+  let dato = await respuesta.json();
+
+        document.getElementById("Email").value=dato.Email;
+        document.getElementById("Nombre").value=dato.Nombre;
+        document.getElementById("CodigoPostal").value=dato.CodigoPostal;
+        document.getElementById("Usuario").value=dato.Usuario;
+        document.getElementById("Ciudad").value=dato.Ciudad;
+        document.getElementById("NIP").value=dato.NIP;
+        document.getElementById("Direccion").value=dato.Direccion;
+        document.getElementById("Contrasena").value=dato.Contrasena;
+        document.getElementById("Estado").value=dato.Estado;
+      });
+
+
+      //Altas
+      // document.getElementById("Registrar").addEventListener("click", async function() {
+      // var datosFormulario= new FormData(document.getElementById("idForm"));
+  //     let respuesta = await fetch('AltaRegistro.php',{
+  //         method: 'POST',
+  //         body: datosFormulario
+  //       })
+  // console.log(datosFormulario);
+  // let dato = await respuesta.json();
+
+  //       document.getElementById("Email").value=dato.Email;
+  //       document.getElementById("Nombre").value=dato.Nombre;
+  //       document.getElementById("CodigoPostal").value=dato.CodigoPostal;
+  //       document.getElementById("Usuario").value=dato.Usuario;
+  //       document.getElementById("Ciudad").value=dato.Ciudad;
+  //       document.getElementById("NIP").value=dato.NIP;
+  //       document.getElementById("Direccion").value=dato.Direccion;
+  //       document.getElementById("Contrasena").value=dato.Contrasena;
+  //       document.getElementById("Estado").value=dato.Estado;
+  //     });
+
+      </script>
+
+      <script>
+         document.getElementById("Modificar").addEventListener("click", async function() {
+      var datosFormulario= new FormData(document.getElementById("idFormulario"));
+      let respuesta = await fetch('ModificarRegistro.php',{
+          method: 'POST',
+          body: datosFormulario
+        })
+        let dato = await respuesta.json();
+
+        document.getElementById("Email").value=dato.Email;
+        document.getElementById("Nombre").value=dato.Nombre;
+        document.getElementById("CodigoPostal").value=dato.CodigoPostal;
+        document.getElementById("Usuario").value=dato.Usuario;
+        document.getElementById("Ciudad").value=dato.Ciudad;
+        document.getElementById("NIP").value=dato.NIP;
+        document.getElementById("Direccion").value=dato.Direccion;
+        document.getElementById("Contrasena").value=dato.Contrasena;
+        document.getElementById("Estado").value=dato.Estado;
+      });
+      </script>
+ 
+  </body>
+</html>
