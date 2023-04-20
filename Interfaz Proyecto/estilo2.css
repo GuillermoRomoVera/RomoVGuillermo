@@ -4,6 +4,7 @@
   body {
     margin: 0;
     font-family: "Inconsolata";
+    background-color: #f8f8f8;
   }
   
   img {
@@ -20,6 +21,13 @@
     color: #454546;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+  .main-title{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #454546;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     }
   .main-header__container{
     display: flex;
     justify-content: space-between;
@@ -173,7 +181,7 @@
   .btn-shop{
     display: block;
     border: 2px solid #FF4E00;
-    color: white;
+    color: rgb(234, 232, 232);
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -193,20 +201,12 @@
   }
   .product {
     border: 1px solid #ccc;
+    background-color: white;
     padding: 20px;
     text-align: center;
     position: relative;
-  }
-  .product:before {
-    content: "New";
-    background: #FF4E00;
-    padding: 10px;
-    width: 60px;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    transform: rotate(-90deg);
-    color: white;
+    border: 2px solid grey;
+    border-radius:15px;
   }
   
   .product__img{
@@ -215,7 +215,8 @@
     object-fit: cover;
   }
   .product__title{
-    text-align: center;
+    text-align: left;
+    font-size:medium;
   }
   .product__price {
     color: #FF4E00;
