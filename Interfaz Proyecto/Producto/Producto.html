@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="Diseño.css">
+    <script src="./proyecto.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+          <div class="main-header__container">
+            <h1 class="main-header__title">VentaLoc</h1>
+            <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <nav class="main-nav" id="main-nav">
+              <ul class="menu">
+                <li class="menu__item"><a href="" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Acerca de</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Caracteristicas</a></li>
+                <li class="menu__item"><a href="" class="menu__link"><Table>Categorías</Table></a></li>
+                <li class="menu__item"><a href="" class="menu__link">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-header__container">
+            <span class="main-header__txt">Algun problema o duda</span>
+            <p class="main-header__txt"><i class="fas fa-phone"></i>  Llama al 12345678</p>
+          </div>
+          <div class="main-header__container">
+            <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+            <a href="" class="main-header__btn">Mi carrito<i class="fas fa-shopping-cart"></i></a>
+            <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+          </div>
+        </div>
+    </header>
+
+    <div class="container">
+      <h2 class="main-title" >Camisa de Manga Corta con Botones</h2>>
+
+		<main>
+			<div class="container-img">
+				<img
+					src="https://m.media-amazon.com/images/I/71nguw0PRpS._AC_SX679_.jpg"
+					alt="imagen-producto"
+				/>
+			</div>
+			<div class="container-info-product">
+				<div class="container-price">
+					<span>$250.00</span>
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+
+				<div class="container-details-product">
+					<div class="form-group">
+						<label for="colour">Color</label>
+						<select name="colour" id="colour">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="rojo">Azul Marino</option>
+							<option value="blanco">Blanco</option>
+							<option value="beige">Azul Celeste</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="size">Talla</label>
+						<select name="size" id="size">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="40">CH</option>
+							<option value="42">M</option>
+							<option value="43">L</option>
+							<option value="44">XL</option>
+						</select>
+					</div>
+					<button class="btn-clean">Limpiar</button>
+				</div>
+
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input
+							type="number"
+							placeholder="1"
+							value="1"
+							min="1"
+							class="input-quantity"
+						/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i>
+							<i class="fa-solid fa-chevron-down" id="decrement"></i>
+						</div>
+					</div>
+					<button class="btn-add-to-cart">
+						<i class="fa-solid fa-plus"></i>
+						Añadir al carrito
+					</button>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<li class="a-spacing-mini"><span class="a-list-item"> 89% poliéster, 11% licra  </span></li>
+            <li class="a-spacing-mini"><span class="a-list-item"> Cierre de Botón  </span></li>
+            <li class="a-spacing-mini"><span class="a-list-item"> Lavar a máquina  </span></li>
+            <li class="a-spacing-mini"><span class="a-list-item"> Bolsillo frontal en el pecho  </span></li>
+					</div>
+				</div>
+
+				<div class="container-additional-information">
+					<div class="title-additional-information">
+						<h4>Información adicional</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-additional-information hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-reviews">
+					<div class="title-reviews">
+						<h4>Reseñas</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-reviews hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-social">
+					<span>Compartir</span>
+					<div class="container-buttons-social">
+						<a href="#"><i class="fa-solid fa-envelope"></i></a>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section class="container-related-products">
+			<h2>Productos Relacionados</h2>
+			<div class="card-list-products">
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+							alt="producto-1"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Nike - Roshe Run</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$85.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80"
+							alt="producto-2"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Common Projects Achilles</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$255.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+							alt="producto-3"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Adidas - Boston Super OG</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$105.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://images.unsplash.com/photo-1617606002779-51d866bdd1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+							alt="producto-4"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Common Projects Achilles</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$250.00</div>
+					</div></div>
+				</div>
+			</div>
+		</section>
+    
+
+    <h2></h2>
+
+    <footer class="main-footer">
+        <div class="footer__section">
+          <h2 class="footer__title">Sobre nosotros</h2>
+          <p class="footer__txt">Esta es una pagina vez sobre ventas locales,esto con el proposito de hacer ventas de forma local</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Contactanos</h2>
+          <p class="footer__txt">Phone : 123456789</p>
+          <p class="footer__txt">Email : ProyectoIngenieria@hotmail.com</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Enlaces Directos  </h2>
+          <a href="" class="footer__link">Inicio</a>
+          <a href="" class="footer__link">Acerca de</a>
+          <a href="" class="footer__link">Problemas</a>
+          <a href="" class="footer__link">Tienda</a>
+          <a href="" class="footer__link">Soporte</a>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Suscribete para recibir ofertas</h2>
+          <p class="footer__txt">Suscribete con tu correo para recibir descuentos, ofertas y muchas cosas más.</p>
+          <input type="email" class="footer__input" placeholder="Ingresa un correo electronico  ">
+        </div>
+        <p class="copy">2023 Reservado todos los Derechos </p>
+      </footer>
+    </body>
+    </html>

@@ -10,10 +10,10 @@
     display: block;
     width: 100%;
   }
-  a.main-header {
+  .main-header {
     padding: 0 20px;
   }
-  .main-heder__title{
+  .main-header__title{
     text-align: center;
     font-size: 2.5em;
     margin: 10px 0;
@@ -193,20 +193,12 @@
   }
   .product {
     border: 1px solid #ccc;
+    background-color: white;
     padding: 20px;
     text-align: center;
     position: relative;
-  }
-  .product:before {
-    content: "New";
-    background: #FF4E00;
-    padding: 10px;
-    width: 60px;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    transform: rotate(-90deg);
-    color: white;
+    border: 2px solid grey;
+    border-radius:15px;
   }
   
   .product__img{

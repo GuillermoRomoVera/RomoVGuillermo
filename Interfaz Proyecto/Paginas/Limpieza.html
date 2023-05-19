@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="estiloParaProductos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+          <div class="main-header__container">
+            <h1 class="main-header__title">VentaLoc</h1>
+            <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <nav class="main-nav" id="main-nav">
+              <ul class="menu">
+                <li class="menu__item"><a href="" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Acerca de</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Caracteristicas</a></li>
+                <li class="menu__item"><a href="" class="menu__link"><Table>Categorías</Table></a></li>
+                <li class="menu__item"><a href="" class="menu__link">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-header__container">
+            <span class="main-header__txt">Algun problema o duda</span>
+            <p class="main-header__txt"><i class="fas fa-phone"></i>  Llama al 12345678</p>
+          </div>
+          <div class="main-header__container">
+            <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+            <a href="" class="main-header__btn">Mi carrito<i class="fas fa-shopping-cart"></i></a>
+            <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+          </div>
+        </div>
+      </header>
+      <h2></h2>
+
+
+      <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="https://m.media-amazon.com/images/I/61qJu1lU9rL._AC_SX522_.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Pinol Original 3L</h2>
+                <p class="price">$96</p>
+            </div>  
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIWFRgVFhUZFRgaHBwYGhkYFRgYGBwaHBgaHRwcGhgcIS4lHB8rJBkdJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrJCw7MTcxNDQ0NzQ0ODcxOjE3NjE2NjY9NDY0NDU1NzQ3NDQ0NDQ0ND82NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAECAwUGBwj/xABFEAACAQICBQgGCQEGBwEAAAAAAQIDEQQhBRIxQXEiMlFhgZGhsQYHQnKCwRMUIzNSkqKy0fAkQ2KD0uEXU2Nzo+LxFf/EABkBAQADAQEAAAAAAAAAAAAAAAABAwQCBf/EAC4RAQEAAQIEBAUCBwAAAAAAAAABAgMREiExQRMzUYEEMmFx8CKhBRQjQpGx8f/aAAwDAQACEQMRAD8A9mAAAAAAAAAAAAAAUYQFQAAAAAFLlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJ5lYmCpLlPsMlCV0+JzLzdWcmYAHTkKMqWy2MCzWMhBlVyJyOZd3WU2VAB05AAAAAAAAAAAAAAAAAAAAAAAAAABq8VUtOa93yJOAleL95/I12Nl9pP4fJfyTNE82XvPyRRjf12L88f0StgAC9QFlTmvg/IvMdbmy4PyIpGjnV5PZ8zfROXk+T8J1EdhTo3fdfrTbZcAC9QAAAAAAAAAAAAAAAAAAAAAAAAAADRY5/aT+HyJuiObL3n5Ig6Q+8nwj5Im6I5svffkjPh5lac/LjYgA0Myhjq82XB+RkMdXmy4PyIvRMcxJ8j4WdVHYcmpcns/k6yOwo0O7R8R2XAA0MwAAAAAAAAAAAAAAAAAAAAAAAAAANBpL7yfCPkTtD82XvPyRA0j95PhHyJ2hnyZe+/JGbDzK05+XPZsgAaWZQx1ubLg/IyGOrzZcH5EXomOVa5L4HWQ2I5Gb5D4fyddDYuBRod1+v2XgA0M4AAAAAAAAAAAAAAAAAAAAAAAAAAOe0k/tZ8I+RP0NzZe8/2xNdpT72Xw+RsNCcyXvP8AbEzYeZfdpz8uezZgA0syhjq82XB+RkMdXmy4PyIvRMcpPmvgzrY7FwOSm+T2M62GxcEUaHdfr9l4ANDOAAAAAAAAAAAAAAAAAAAAAAAAAADndJ/ey+H9pO0G+RL33+2JB0p97L4fJE7QfMn77/bEz4fPfdpz8uezaAA0Myhjq82XB+RkMNeaUXd7U0uvLcReiY5KpzfDvTOxhsRyVWnJqK1X+V9DOqpTi1k07ZMp0Zea/XvRmABezgAAAAAAAAAAAAAAAAAAAAAAAAAA53Sn3kvh8kTtCcyfvv8AbE1+ln9rLhHyJ2gHyJe+/wBsTPh8992nPy42xbKSSu8iyvVjCLlJ2SOexWPlUl0R3R+bNDM2VfSO6P5n8kQYScqkW3d57eBShSlLKKv/AFvZKWClGUZNprNZX2/0gXo4fA6UxE69SLqvVi6jtsfJnFK2Wazs+KOuu41Z2y2bOBwkZWxDadrylHKVsnKN4uO++r4dZ6P9RcpSmpJbrcF07izUm2zzP4fqXPi3tv392fD47dLv/knpmmlRlHJq3l3mXD4hx610fwVvTbUFkJpq6LwAAAAAAAAAAAAAAAAAAAAAACycklduxDxGkYxXJWt4IDV6UX2k/h/aS/R92pNv8Tf6YmvxeKoylJNz17RclCMnZaqataL3SXeVo4qKhqw1tVy1Zay1ZJ6sXscVlaxVNPLHLivR1/MaeU4JZv6fbqrpXFOb/wAK2dfWZtH6KcuVPJbo73x6F48CyGGTaaadnezRtVjH0LvLUJdOCSskkuoj455Lj8gsRL/D/XaWVby2tZdH/wBCHGN1vruqnT+j+mtbVhrautmudfp3Hb4J8l8fkiB9Thr6/wBHDWvra2++2+3aTKV47Gv67QbTslyink1cg4jB7459W/sJH0z6UU+nfUBAw9dxfU9qNrGSaujXzoRd8zNheS9W90wJoAAAAAAAAAAAAAAAAAAETEYtRyWb8EW4qtJ8mKdt7/gj4eitblJ2+YGJynJ53k+hbuxbC6WBm4vJLqbz8DZxcUrKyXcVlNWeaA829LKFONdym6quopKnTlNXjGC3b/5MtDGUcLhZzqSahCvKOtqtybso21Vnds3Wm9HVJz1otJXTV6dOeaUdqnJN5rYrcTnPS7RFeWj8TFRc5utGrGEIucnF1Y+zHek27K+SLJd+VrFNGY60zxnPnvfu2uivS7R9d6sMRBT2ak705X6Ep21uy5tcfhpTi9SShO3Jm1KUb7teMZLWXBp+R88y0HjUn/ZcRd7fsKn+k3mgtK6XwmpGnSxE4XzpTo1JQa2asU1ePw27SctP0rXMvVvdL+lelsLWjRq0qMXK7jJKrKE4p7YS11fwaurpESn6z8dqyl9HQdmkuTVW3/MPVdKaNpYml9HWheLz3a0ZWtrQl7Mldq661mm0eJelvo3UwV6cnrQlK9OolZSit0uiSyuu1ZHWnMbNrOfNzncpeXTk6FesvHOTSp0FaKlfVqvNrZ95sI8vWbpDVUtWgru3MqdF/wDmcTkKcvtOMYr9Jgg/sc90lLxa+Zo8LDny9f2UzUy9fT93bL1jaR13D7HZeL+jlvV17f8AVjFD1maRcG7Ubpq6+jnseT9vc7HI1nZwl8L7Hl4N9wlaNRp82SbfCSz+b7ERdLH0/L0TNTL1/J1dn/xL0goxlq0Gm9WX2c8nu2T3o7D1f+mlTEYmVDEKEZOOtRdOMop2TcovWlK7tdrZzZdKPHsGufSllu7dz77d5N0Zi6lOUKkHq1KMk0+izur9Mbq1t6uLo45Y8p/2I8S43nfyvqEGu0HpSGJoU68MlON7Xu4yWUovrjJNPgbEw2WXZql3VAAAAAAAAAAAAAUI2PxEadOc5PVjGLnJ9CirvyJJ5z629NuFKGFg+XValK26CklFdss+EH0nWGPFdkybpcPWDo5/3zXO20avs5SzULWRnh6c6Pef1iCy1uVCceTe13rRVkeI1oqzjH2nGkuHOk+Nm+8rVSle2yco0l7sM32NJF90JO7rhj3JemWBz/tNLK17ytbW2XvsuZY+l2Cvb6zQ26v3sFyujN7eo8HWcov8dZz+GmmkvApQ51PrlVqP9ST8CPAl7o2e+x9KcFK1sTh3e7X29N7Nvtbi9ekeEeyvR2X++ha257dh8+YWnyaS/wClP9TX+oThyH14ePersjweW+5s+hVpvDvZUpP/ADIP5mRaXov26f54fyfPGJjnVa26tKovgun4IVYqMptezUjUWXszSUuzb3C6H1OF9D//AK1L8cPzx/k5304x2Engq8akqb+zlKCcoOX0ii9RxV7617WseORpxi4ppasZyha22FRXS8bd5fh6aXJavZyoy64vOL7nb4kdTQ59Tha2nLlrhHykWU81Uj736WpfIV4ONRx/Dqq/TaMsy6hz2ul/uiXy9vrWOzb/ABFUtanLq5S7k34NlcQ8oT/Dk+DzXz7y3CSt3K/5XHzL4RvCUei6XZmn3W7yZznt/pF5X87rMRk4zW7kt8FyX13VvykqckpqT2Pky42/pGCjaUdXpSXxLm+Fr9pkw/Kg4vJrvTXlu8TrHry78/dzenPs9O9UunXCpPBzeU250237aXKW32oxvxhJ+0euny9g8VKDjVhLVnCUZJrc4tNcbW/T1n0b6PaVhicPCvHLWXKj+GSylHsafFWe8y/E4bXinddo57za9m1ABmXgAAAAAAAAAAwYitGEJTk9WMU5Sb2JJXbfYj579I9KSxOIqV5X2vVX4ctWEeKi3frdz0r1qac+joxw8XaVTlT6qcXkn0a0suEZHkcFsv067v4dqz7ka/h8NpxV3jGKUtWTlupxk+M5XvbrV32GOMtRwv7FOU370svJMre8Lv256792PN8dXskVavOfvRj1WgtZ+TRfUr6cNXVV+ZTa+KVrv9Mi2F1JX9mku92v5suqK9+lyjHsi/8A3ZiqVLurLosvC422SyYeNtTqptdt4/wW043jH/tJfL5l0X4R+bKwjkl0Rt3SsTsDV5JbpUreK+Ui1RvFXycqTi+MbW/c+4rT2w92S79S3ky6GUV1Sdu1uK/chtuEuVfpnF9kovWXbyv0lYO8uhTir9TVrducfyFISsr9D1vC7727dhSStZdDy7XZt8ddPsAj6YpO8Z/BLilKz7m+5ETZNfC+5uPyNxVhrxcfxLJ/4ksn3W7jS4hu/Wr/ALk15s5ym3Nm1sf1fc2Sl2+M7rzJEOd72XB7UvJdhgr2u+Hk4r5MyJ7+3tfKVu+wx6/ZRecUhyXJdDTXB7fG3cZVK0nJb8+3Zftyt1yYrLNP8Sa+dl4LtLVsS2J8m+5P2WuDa7EzqzblOyN92bWtK/stpcL7PFeKPQ/VTp/6GvLCTdoVXeF9kaiWz4ktXjCK3nnMs4tWzs3brW1dya7ESaNaV4VItpxtyltUotWktyeSl1NE5Y8eNx9XMvDZk+ogaX0V0ysVh4VclPm1Ir2akduW5PKS6pI3R5lll2rbLLN4qACEgAAAAChhxNeMIynJ6sYpybe5JXbMxzHpzhcTVw+pRWsnK80nynFK6SW9X22zyWW0nGb3ZMeQekulJ4ivOtJW1mrJ+zFXUI9GSu30u/SabES5OWUp2j1rW/2dzd4nBvW+jlFwbbvGUXFpZLNPNX2cCPicKpzyyUVk+t3V3wTm+xHpTaTaLbK1kLXjbZa/wrYu63cYqbyUtzcp/C25LwXibh4KLk92cbXexJJtdza7DDLARajH8SSXBvPs1W+5hG1a+pKyit+19kJPzizFSXIqdcmvytL5o2s8EnKb3LWT6pJRXk5FKOjlqLPNvW7NZX8B1NmvcuTfqivMvi/OUf8AyW+bJtLRy1Um9srPsT/gfUuSpJ7ZQl3zu/JsndKBS2Xvkrfp1r+aKq9mt7tbja3nYlrR71ZpfhnlvTblJeVijwEnnvWsuzWUl+1kIRoW7L5vqlJrwU79gvrar2XVnbc84y8Wl8JJngnravsyiu6zXygZ/qcujNttJdLya4Xu7+70gQ6U3l1279sV8iDpPD2ldLKVuyyf+3ibX6pnrLZl+WS299uxMzvR0pxtHOadrdLbVrLrzXxDleVcastxu3Vz9bDycb22J+KUi+lhm4p33L5q667uKOyoeguk5xknh3G6STlUprZdZrWusrbifgPVppCyUnShk071G9qVrasXsefYTctKXrHnf1OHlHEfVeTm804tdSb/AJu+wrHBxaae9Jpea77rsPTaHqrm2nPERWVpKFNyvm3ZNyXS87b9hvKHq1wKd5upU2uzmoxu2m+Yk87dJGXxGjPq5mlq36PHPo0o61s8r36VbPwXcT9F6ExNRuNKhOcZWlGShLU6HebtFdGb3HvGD0BhKSSp0Kcbb9SLl2yeb7zZWK8vjdvlxW4/C3+6uR9A/RqthISdWabnbkRzjG18298s7ZZWW/K3XFQYs87nlcr1asMZjNoqADl0AAAAAAAAw18PCatKMZLolFSXczWV/RrAzVnh6a64wUH3ws95uATvZ0TvXMy9BtHt3+jkuFWpbxl1mNegWAVuRPK/95LemvmdUCfEy9acVchP1fYJ62dVa21Ka8LxMT9XOEtZVKy+Kns6OZ1HaAnxMvU4q4WHq1wySX01eylrZune+fRDrKr1cUFDVVapxag9l7bus7kE+Ln6p4q4Sl6uKUW2q83d3s4x6/5McfVvBf38u2mnucX7W9M78Dxc/U4q4WPq4oZXrVHZW2Q/FrXzT2MzL1eYbL7WtlZrOnu+DqR2gHi5eqOKuNo+r3CR2zqyyazlBKzbdlaC2Xsjb6K9GMJh3rU6fL/FJuTWSWV8o5LckbsHNzyvWm4VAOUAAAAAAAAAAAAAAAAAAAoCoAAAAAAAAAAAAAAKFQAAAAAAAAAAAAAAAAAP/9k="
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Escobas</h2>
+                <p class="price">$120</p>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://calimaxmx.vtexassets.com/arquivos/ids/195028-800-auto?v=637920574177330000&width=800&height=auto&aspect=true"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Jabón en polvo ACE 750gr</h2>
+                <p class="price">$35</p>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0561/0274/8343/products/PW_pabilo.png?v=1668453435&width=600"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Trapeador</h2>
+                <p class="price">$50</p>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.smartnfinal.com.mx/wp-content/uploads/2016/10/9118-Detergente-liquido-aroma-limon-Salvo-1.2-l-610x610.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Detergente para platos Salvo - 1.2L</h2>
+                <p class="price">$62</p>
+            </div>
+        </div>
+        <div class="item">
+          <figure>
+              <img
+                  src="https://www.cloralex.com.mx/wp-content/uploads/2017/06/CLX-ER-950.png"
+                  alt="producto"
+              />
+          </figure>
+          <div class="info-product">
+              <h2>Cloralex Rendidor - 950ml</h2>
+              <p class="price">$25</p>
+          </div>
+      </div>
+      <div class="item">
+        <figure>
+            <img
+                src="https://m.media-amazon.com/images/I/71b3BToAp+L._AC_SX522_.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Fabuloso, Frescura Activa, Limpiador Líquido Antibacterial, Lavanda, Protección antiviral y antibacterial - 1L</h2>
+            <p class="price">$28</p>
+        </div>
+    </div>
+    </div>
+        
+   
+    <h2></h2>
+
+    <footer class="main-footer">
+        <div class="footer__section">
+          <h2 class="footer__title">Sobre nosotros</h2>
+          <p class="footer__txt">Esta es una pagina vez sobre ventas locales,esto con el proposito de hacer ventas de forma local</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Contactanos</h2>
+          <p class="footer__txt">Phone : 123456789</p>
+          <p class="footer__txt">Email : ProyectoIngenieria@hotmail.com</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Enlaces Directos  </h2>
+          <a href="" class="footer__link">Inicio</a>
+          <a href="" class="footer__link">Acerca de</a>
+          <a href="" class="footer__link">Problemas</a>
+          <a href="" class="footer__link">Tienda</a>
+          <a href="" class="footer__link">Soporte</a>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Suscribete para recibir ofertas</h2>
+          <p class="footer__txt">Suscribete con tu correo para recibir descuentos, ofertas y muchas cosas más.</p>
+          <input type="email" class="footer__input" placeholder="Ingresa un correo electronico  ">
+        </div>
+        <p class="copy">2023 Reservado todos los Derechos </p>
+      </footer>
+</body>
+</html>
