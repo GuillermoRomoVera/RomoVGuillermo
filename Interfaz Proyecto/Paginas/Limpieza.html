@@ -1,3 +1,15 @@
+<?php
+	require 'config/DataBase.php';
+	$db = new Database();
+	$con = $db->conectar();
+
+	$sql =$con->prepare("SELECT id, nombre_producto, descripcion, precio FROM producto WHERE activo=1");
+	$sql->execute();
+	$resultado = $sql-> fetchAll(PDO::FECTH_ASSOC);
+
+?>
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>

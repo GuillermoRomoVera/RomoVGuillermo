@@ -60,6 +60,8 @@
   .menu__link:hover {
     background: white;
     color: #212121;
+    transform: scale(1.1);
+    transition: 0.3s;
   }
   
   .mostrar{
@@ -337,20 +339,7 @@
     color: #555;
   }
   
-  /*Estilos para tablet*/
-  @media screen and (min-width:768px) {
-    .slider{
-      height: 400px;
-    }
-    .editor__item{
-      height: 250px;
-    }
-    .container-tips{
-      margin: 50px 0;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+  
   /*Estilos para web*/
   
   @media screen and (min-width:1024px) { 
